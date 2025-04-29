@@ -15,5 +15,9 @@ class Program
             Console.WriteLine("X is 10");
         }
         Console.WriteLine("Hey how are you?");
+        for(int i = 0; i < 20; i++)
+        {
+            Console.WriteLine("Hello Kevin.");
+        }
     }
 }
