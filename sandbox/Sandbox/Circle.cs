@@ -11,7 +11,8 @@ class Circle
 
     public Circle(double radius)
     {
-        _radius = radius;
+        // _radius = radius;
+        SetRadius(radius);
     }
     
 
