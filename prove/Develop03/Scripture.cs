@@ -19,15 +19,36 @@ class Scripture
         _reference = reference; // scripture reference
         _words = ConvertToWords(text); // text
     }
-    public void HideSomeWords()
+    public bool HideSomeWords()
     {
-        Random random = new Random();
-        for (int i = 0; i < 3; i++) // for loop to count the number of times certain words are hidden
+        int numOfRemainingWords = NumberOfHiddenWords();
+        if (numOfRemainingWords <= 0)
         {
-            int index = random.Next(0, _words.Count);
-            Word word = _words[index];
-            word.SetIsHidden(false);
+            return true;
         }
+        else if (numOfRemainingWords <= 3)
+        {
+            foreach (Word word in _words)
+            {
+                word.SetIsHidden(true);
+            }
+        }
+        else
+        {
+            int _wordsHidden = 0;
+            Random rn = new Random();
+            while (_wordsHidden < 3)
+            {
+                int randomNumber = rn.Next(0, _words.Count);
+                if (_words[randomNumber].IsHidden())
+                {
+                    _words[randomNumber].SetIsHidden(true);
+                    _wordsHidden++;
+                }
+
+            }
+        }
+        return false;
         
 
     }

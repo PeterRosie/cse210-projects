@@ -22,6 +22,34 @@ class Program
         myCylinder.SetCircle(myCircle);
         Console.WriteLine($"{myCylinder.GetVolume()}");
 
+        int duration = 12;
+        DateTime currentTime = DateTime.Now;
+        DateTime endTime = currentTime.AddSeconds(duration);
+        int sleepTime = 250;
+        int count = duration;
+
+        string animationString = "(^_^)(-_-)";
+
+        while (DateTime.Now < endTime)
+        {
+            Console.Write(animationString[0..5]);
+            Thread.Sleep(sleepTime);
+            Console.Write("\b\b\b\b\b");
+            Console.Write(animationString[5..]);
+            Thread.Sleep(sleepTime);
+            Console.Write("\b\b\b\b\b");
+        }
+        while (DateTime.Now < endTime)
+            {
+                Console.Write("+");
+                Thread.Sleep(sleepTime);
+                Console.Write("\b");
+                Console.Write("-");
+                Thread.Sleep(sleepTime);
+                Console.Write("\b");
+                Console.Write("-");
+            }
+
 
     }
 

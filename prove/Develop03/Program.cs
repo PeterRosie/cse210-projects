@@ -55,6 +55,10 @@ class Program
             if (!done)
             {
                 input = Console.ReadLine();
+                if (input == "")
+                {
+                    scriptures[selectScripture].HideSomeWords();
+                }
             }
         }
 

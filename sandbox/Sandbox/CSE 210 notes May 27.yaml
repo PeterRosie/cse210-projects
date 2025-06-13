@@ -1,0 +1,39 @@
+look for nouns and verbs
+nouns - objects
+verbs - methods on objects
+methods, attributes for nouns
+hide - private
+hide and restrict as much as possible
+private
+setters and getters
+constructors
+default - no parameters
+non-default - has parameters
+Fraction assignment
+Debugger
+step over - execute and move onto the line after breakpoint
+step in - shows what is happening
+AI.
+Scripture memorization
+Program
+Main(args: string[]): void
+Word
+_word: string
+_hidden: bool
++word (string word)
++isHidden(): bool
++SetIsHidden (bool hidden): void
++GetWordString(): string
++DisplayWord(): void
+-GetWordLength(): int
+ScriptureReference
+_bookName: string
+_chapter:int 
+_verse: int[]
+
++ScriptureReference(string name, int chapter, int verse)
+ScriptureReference(string name, int chapter, int startVerse int endVerse)
+ShowScriptureReference
+highlight prove
+ctrl+shift+P
+

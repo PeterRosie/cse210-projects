@@ -1,0 +1,11 @@
+Object - noun/thing
+variable (attribute)
+function (method)
+datatype (class)
+Object - instantiation (creation) of class
+Class - custom template/datatype
+Contain local variables for the states - Called Attributes
+
+Have functions/actions - Called methods
+Change the state/values of the Attributes
+provide info based upon Attributes
