@@ -21,7 +21,7 @@ class Scripture
     }
     public bool HideSomeWords()
     {
-        int numOfRemainingWords = NumberOfHiddenWords();
+        int numOfRemainingWords = _words.Count - NumberOfHiddenWords();
         if (numOfRemainingWords <= 0)
         {
             return true;
@@ -40,7 +40,7 @@ class Scripture
             while (_wordsHidden < 3)
             {
                 int randomNumber = rn.Next(0, _words.Count);
-                if (_words[randomNumber].IsHidden())
+                if (!_words[randomNumber].IsHidden())
                 {
                     _words[randomNumber].SetIsHidden(true);
                     _wordsHidden++;
