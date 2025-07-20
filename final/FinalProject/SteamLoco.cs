@@ -17,7 +17,6 @@ abstract class SteamLoco
     public int GetYear()
     {
         return _year;
-
     }
     public bool RanTrips()
     {
@@ -32,5 +31,11 @@ abstract class SteamLoco
         return pEvent == "Yes" || pEvent == "yes";
         
     }
-    public abstract string GetDesciption();
+    public bool UnderSteam()
+    {
+        Console.Write("Did it operate under steam?");
+        string steam = Console.ReadLine();
+        return steam == "Yes" || steam == "yes";
+    }
+    public abstract string GetDescription(int year);
 }
