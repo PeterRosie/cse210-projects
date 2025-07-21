@@ -1,6 +1,6 @@
 class Northern : SteamLoco
 {
-    int _choice;
+    private int _choice;
     public Northern(string loco, int year, int choice2)
     : base(loco, year, GetDescription(year, choice2))
     {

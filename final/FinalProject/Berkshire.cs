@@ -1,8 +1,8 @@
 class Berkshire : SteamLoco
 {
-    string _waterTender;
-    string _achievement;
-    string _personalRecord;
+    private string _waterTender;
+    private string _achievement;
+    private string _personalRecord;
     public Berkshire(string loco, int year, string waterTender, string achivement, string personalRecord)
     : base(loco, year, GetDescription(year, waterTender, achivement, personalRecord))
     {
